@@ -56,7 +56,7 @@ public class UseCaseExtension {
 
 
     public UseCaseExtension() {
-
+        // Required by JPA for entity instantiation.
     }
 
     public UseCaseExtension(String conditionText, ExtensionKind kind, ExtensionExit extensionExit) {

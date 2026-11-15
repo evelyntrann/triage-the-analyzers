@@ -36,6 +36,7 @@ public class PeerEvaluation {
 
 
     public PeerEvaluation() {
+        // Required by JPA for entity instantiation.
     }
 
     public PeerEvaluation(String week, Student evaluator, Student evaluatee, List<Rating> ratings, String publicComment, String privateComment) {

@@ -7,6 +7,7 @@ public class RatingAverage {
 
 
     public RatingAverage() {
+        // Supports no-argument object construction by frameworks.
     }
 
     public RatingAverage(Integer criterionId, Double averageScore) {
