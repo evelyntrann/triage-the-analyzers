@@ -29,7 +29,7 @@ public class UseCaseMainStep {
 
     
     public UseCaseMainStep() {
-
+        // Required by JPA for entity instantiation.
     }
 
     public UseCaseMainStep(Long id, String actor, String actionText) {

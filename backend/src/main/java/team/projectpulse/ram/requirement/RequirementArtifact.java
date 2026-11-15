@@ -78,7 +78,7 @@ public class RequirementArtifact {
 
 
     public RequirementArtifact() {
-
+        // Required by JPA for entity instantiation.
     }
 
     public RequirementArtifact(Team team, RequirementArtifactType type, String title, String content, String notes) {

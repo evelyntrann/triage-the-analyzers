@@ -52,6 +52,7 @@ public class Section {
 
 
     public Section() {
+        // Required by JPA for entity instantiation.
     }
 
     public Section(String sectionName,
