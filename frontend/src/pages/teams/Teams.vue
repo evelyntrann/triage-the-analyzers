@@ -38,7 +38,7 @@
                 <draggable
                   v-model="row.students"
                   group="people"
-                  
+
                   @end="onDragEnd"
                   item-key="id"
                   class="trello-team-student-list"
@@ -235,7 +235,7 @@
               <draggable
                 v-model="studentsWithoutTeam"
                 group="people"
-                
+
                 @end="onDragEnd"
                 item-key="id"
                 class="trello-student-with-no-team-list"
