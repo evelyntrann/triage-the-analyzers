@@ -16,6 +16,7 @@ public class Result {
 
 
     public Result() {
+        // Supports no-argument object construction by frameworks.
     }
 
     public Result(boolean flag, Integer code, String message) {
