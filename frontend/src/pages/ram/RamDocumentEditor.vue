@@ -545,7 +545,7 @@ watch(selectedSection, (section) => {
   if (!section) return
   draftContent.value = section.content || ''
   if (section.type === 'RICH_TEXT' && editor.value) {
-    editor.value.commands.setContent(draftContent.value, false)
+    editor.value.commands.setContent(draftContent.value, { emitUpdate: false })
   }
   draftArtifacts.value = (section.requirementArtifacts || []).map((artifact) => ({ ...artifact }))
 })
@@ -667,8 +667,11 @@ function openAddArtifact() {
 }
 
 function openEditArtifact(index: number) {
+  const artifact = draftArtifacts.value[index]
+  if (!artifact) return
+
   artifactEditingIndex.value = index
-  artifactDraft.value = { ...draftArtifacts.value[index] }
+  artifactDraft.value = { ...artifact }
   artifactDialogVisible.value = true
 }
 
