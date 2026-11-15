@@ -69,8 +69,6 @@ public class DocumentSection {
     private PeerEvaluationUser updatedBy;
 
 
-    public DocumentSection() {
-    }
 
     /* ---------- Convenience helpers ---------- */
     public void addRequirementArtifact(RequirementArtifact artifact) {
